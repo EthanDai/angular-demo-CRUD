@@ -1,0 +1,26 @@
+<form novalidate AutoComplete="Off" name="edit_form">
+  <fieldset>
+    <legend>編輯文章</legend>
+    <label>名稱</label>
+    <input type="text" ng-model="title" value="" placeholder="隨意輸入…" required>
+    <span class="alert alert-error" ng-show="edit_form.title.$error.required">請輸入資料喔</span>
+
+    <!--<span class="help-block">範例，區塊的輔助說明文字。</span>-->
+
+    <label>內容</label>
+    <textarea name="" id="" cols="30" rows="10" ng-model="content" placeholder="隨意輸入…" required></textarea>
+    <span class="alert alert-error" ng-show="edit_form.title.$error.required">請輸入資料喔</span>
+
+
+    <br>
+
+    <button ng-disabled="!edit_form.$valid"type="button" class="btn" ng-click="add_article();" ng-show="is_new">新增</button>
+    <button ng-disabled="!edit_form.$valid"type="button" class="btn" ng-click="edit_article(idx);" ng-hide="is_new">修改</button>
+
+
+  </fieldset>
+
+
+
+</form>
+

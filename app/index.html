@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.css"/>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+
+          <ul class="menu">
+            <li><a href="#/list">列表</a></li>
+            <li><a href="#/add">新增</a></li>
+          </ul>
+
+          <div class="row-fluid span1" ng-view>
+
+          </div>
+    </div>
+
+
+
+
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/localStorageModule.js"></script>
+</body>
+</html>
